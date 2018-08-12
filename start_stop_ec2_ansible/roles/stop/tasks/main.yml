@@ -1,0 +1,15 @@
+---
+
+  - name: Stop the running ec2 instances 
+    ec2:
+      aws_access_key: '{{access_key}}'   
+      aws_secret_key: '{{secret_key}}'
+      instance_ids: "{{item.0}}"
+      region: "{{item.1}}"
+      state: stopped
+      wait: True
+      assign_public_ip: yes
+    with_together:
+      - "{{ec2_instance_id}}"
+      - "{{ec2_region}}"
+    ignore_errors: True

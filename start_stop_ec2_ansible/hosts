@@ -1,0 +1,7 @@
+[default]
+localhost ansible_connection=local 
+
+
+[DB_server]
+11.11.11.11 ansible_ssh_private_key_file=test.pem ansible_ssh_user=ubuntu
+

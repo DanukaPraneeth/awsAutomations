@@ -1,0 +1,7 @@
+---
+# defaults file for aws_automation
+
+## Include the access key and the secret key for the aws IAM
+
+access_key: XXXXXXXXXXXXXXXXXX
+secret_key: XXXXXXXXXXXXXXXXXXXXXXXXXXXX

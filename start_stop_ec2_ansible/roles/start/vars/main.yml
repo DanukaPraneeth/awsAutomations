@@ -1,0 +1,8 @@
+---
+# vars file for aws_automation
+
+## Update the following arrays with the intances you need to start
+
+ec2_instance_id: [ 'i-072943771xxxxxxxx' , 'i-086e0e33cxxxxxxxx']
+ec2_region: [ 'us-west-1' , 'us-east-1']
+    

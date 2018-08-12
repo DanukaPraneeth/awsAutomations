@@ -1,0 +1,14 @@
+---
+- name: Stopping the running EC2 instances
+  hosts: all
+  sudo: no
+  remote_user: ubuntu
+  
+  tasks:
+  - name: Gather AWS EC2 facts
+    action: ec2_facts
+
+  roles:
+    - stop
+
+
